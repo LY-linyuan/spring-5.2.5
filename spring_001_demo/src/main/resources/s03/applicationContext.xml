@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--<bean id="school" class="com.bjpowernode.pojo03.School">
+        <constructor-arg name="name" value="清华" />
+        <constructor-arg name="address" value="北京" />
+    </bean>
+
+    <bean id="student" class="com.bjpowernode.pojo03.Student">
+        <constructor-arg name="name" value="张三" />
+        <constructor-arg name="age" value="200" />
+        <constructor-arg name="school" ref="school" />
+    </bean>-->
+
+    <!--<bean id="school" class="com.bjpowernode.pojo03.School">
+        <constructor-arg index="0" value="清华" />
+        <constructor-arg index="1" value="北京" />
+    </bean>
+
+    <bean id="student" class="com.bjpowernode.pojo03.Student">
+        <constructor-arg index="0" value="张三" />
+        <constructor-arg index="2" ref="school" />
+        <constructor-arg index="1" value="200" />
+    </bean>-->
+
+    <bean id="school" class="com.bjpowernode.pojo03.School">
+        <constructor-arg value="清华" />
+        <constructor-arg value="北京" />
+    </bean>
+
+    <bean id="student" class="com.bjpowernode.pojo03.Student">
+        <constructor-arg value="张三" />
+        <constructor-arg value="200" />
+        <constructor-arg ref="school" />
+    </bean>
+
+</beans>
